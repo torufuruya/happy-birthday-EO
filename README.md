@@ -40,11 +40,11 @@ In order to remember the blessing of the birthday of friends who congratulated m
  - やっぱりちゃんとAccessToken取得しなきゃAPIをフルには使えなそう...
 
 - profile img 取得
- - <img src="https://graph.facebook.com/{id}/picture?type=square">
+ - ```<img src="https://graph.facebook.com/{id}/picture?type=square">```
 
 ## やりたい
 
-- フィードの内容を「誕生日」などの文言でフィルターして引っかかったものだけ抽出
+- フィードの内容を「誕生日」「おめでとう」などの文言でフィルターして引っかかったものだけ抽出
 - nextの取得（paging）
 - メッセージもらった人の誕生日を表示（あと何日とか）
 - 友達の誕生日表示のとなりにその人のウォールに書き込める導線
