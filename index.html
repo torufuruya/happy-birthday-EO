@@ -1,0 +1,33 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>anonymous</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<input type="button" value="get wall" onclick="app.getWall();">
+	<div id="fb-root"></div>
+	<div class="contents"></div>
+
+	<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+	<script src="lib/handlebars.js"></script>
+	<script type="text/x-handlebars-template" id="entry-template">
+		<table class="sample1">
+			<tr>
+				<th>img</th>
+				<th>name</th>
+				<th>message</th>
+			</tr>
+			{{#each data}}
+			<tr>
+				<td><img src="{{icon}}"></td>
+				<td>{{name}}</td>
+				<td>{{message}}</td>
+			</tr>
+			{{/each}}
+		</table>
+	</script>
+	<script type="text/javascript" src="js/config.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+</html>
